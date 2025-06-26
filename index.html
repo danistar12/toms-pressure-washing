@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,32 +9,144 @@
     <meta name="robots" content="index, follow">
     <title>Tom's Pressure Washing</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .landing-section { margin: 40px auto; max-width: 1000px; }
+    </style>
+    <!-- For Inter (very modern and readable) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- For Montserrat (great for headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- For Roboto (classic, clean) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--load javascripts-->
     <script src="js/script.js" defer></script>
-    
-    <!-- Placeholder for the navigation bar -->
-    <div id="nav-placeholder"></div>
-    <center><h1>Welcome to Tom's Pressure Washing</h1></center>
-    <p>Your trusted partner for all your Pressure washing needs.</p>
-    <!-- Main content -->
-    <div class="container">
-        <!-- Add the logo -->
-        <img src="images/indexImage.jpeg" alt="Tom's Pressure Washing Logo" class="index-image">
-    </div>
-    <div class="content-row">
-        <div class="content-box">
-            <h2>About Us</h2>
-            <p>Learn more about Tom's Pressure Washing and our commitment to excellence.</p>
+    <!--load navigation bar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/Icon Logo.png" alt="Tom's Pressure Washing Logo" class="nav-logo">
         </div>
-        <div class="content-box">
-            <h2>Our Services</h2>
-            <p>Explore the wide range of pressure washing services we offer for your property.</p>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/Small House Logo.png" alt="Tom's Pressure Washing Logo" class="hero-logo">
+            <h1>Transform Your Property with<br> Tom's Pressure Washing</h1>
+            <p class="hero-subtitle">Professional. Reliable. Local.</p>
+            <a href="#contact" class="cta-button hero-cta">Get a Free Quote</a>
         </div>
-        <div class="content-box">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us today to schedule your pressure washing service!</p>
+    </section>
+<!--header section-->
+    <header>
+        
+        <p>Your trusted partner for all your Soft Washing needs.</p>
+    </header>
+<!--about section-->
+    <section id="about" class="landing-section">
+        <h2>About Us</h2>
+        <div class="content-row">
+            <div class="content-box">
+                <h2>Our Story</h2>
+                <p>
+                    Founded with a passion for quality and customer satisfaction, Tom's Pressure Washing has served the community with reliable and professional cleaning services for years. We believe in honest work, attention to detail, and building lasting relationships with our clients.
+                </p>
+            </div>
+            <div class="content-box">
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to deliver exceptional pressure washing results that enhance the beauty and value of your property. We use state-of-the-art equipment and eco-friendly solutions to ensure every job is done safely, efficiently, and to the highest standards.
+                </p>
+            </div>
+            <div class="content-box">
+                <h2>Why Choose Us?</h2>
+                <p>
+                    With a team of experienced professionals, transparent pricing, and a commitment to your satisfaction, Tom's Pressure Washing stands out as your trusted partner for all exterior cleaning needs. Discover the difference our dedication makes!
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+<!--services section-->
+    <section id="services" class="landing-section">
+        <h2>Our Services</h2>
+        <p>At Tom's Pressure Washing, we offer a wide range of professional pressure washing services to keep your property looking its best. Whether it's residential or commercial, we've got you covered!</p>
+        <div class="content-row">
+            <div class="content-box">
+                <h2>Residential Pressure Washing</h2>
+                <p>
+                    Restore the beauty of your home! We clean driveways, sidewalks, patios, decks, fences, siding, and more. Our gentle yet effective methods remove dirt, mold, and stains without damaging your property.
+                </p>
+            </div>
+            <div class="content-box">
+                <h2>Commercial & Parking Lots</h2>
+                <p>
+                    Make a great first impression! We handle storefronts, warehouses, parking lots, and more. We also offer professional line striping to keep your parking areas looking sharp and organized.
+                </p>
+            </div>
+            <div class="content-box">
+                <h2>Custom & Specialty Services</h2>
+                <p>
+                    Have something unique? We pressure wash heavy equipment, outdoor furniture, pool areas, and more. If it needs cleaning, we can handle it—just ask!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="services-list">
+            <h2>We Pressure Wash:</h2>
+            <ul>
+                <li>Driveways & Sidewalks</li>
+                <li>Patios & Decks</li>
+                <li>Fences & Gates</li>
+                <li>Home Exteriors & Siding</li>
+                <li>Commercial Buildings</li>
+                <li>Parking Lots & Garages</li>
+                <li>Line Striping</li>
+                <li>Outdoor Furniture</li>
+                <li>And much more!</li>
+            </ul>
+        </div>
+    </section>
+<!--gallery section-->
+    <section id="gallery" class="landing-section">
+        <h2>Our Work</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left" aria-label="Previous image">&#8592;</button>
+            <div class="carousel-track">
+                <img src="images/driveway.jpeg" alt="Pressure washed driveway">
+                <img src="images/patio.jpeg" alt="Cleaned patio">
+                <img src="images/siding.jpeg" alt="Restored siding">
+                <img src="images/boats.jpeg" alt="Pressure washed boats">
+                <img src="images/driveway2.jpeg" alt="Pressure washed driveway">
+                <img src="images/gutters.jpeg" alt="Pressure washed gutters">
+                <img src="images/patio2.jpeg" alt="Cleaned patio">
+                <img src="images/siding2.jpeg" alt="Restored siding">
+                <img src="images/driveway3.jpeg" alt="Pressure washed driveway">
+                <img src="images/patio3.jpeg" alt="Cleaned patio">
+                <img src="images/siding3.jpeg" alt="Restored siding">
+            </div>
+            <button class="carousel-arrow right" aria-label="Next image">&#8594;</button>
+        </div>
+        <p>Check out our gallery to see the amazing transformations we achieve with our power washing services.<br> From driveways to patios, we take pride in delivering outstanding results for every project.</p>
+    </section>
+<!--contact section-->
+    <section id="contact" class="landing-section">
+        <h2>Contact Us</h2>
+        <div class="cta-box">
+            <p>Ready to transform your property? Reach out for a free quote or to schedule your service today!</p>
+            <a href="mailto:info@tomspressurewashing.com" class="cta-button">Email Us</a>
+            <br><br>
+            <p>Or call: <a href="tel:555-123-4567" style="color:#00509e;font-weight:bold;">(555) 123-4567</a></p>
+        </div>
+    </section>
 </body>
 </html>
