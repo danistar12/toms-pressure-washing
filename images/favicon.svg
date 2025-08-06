@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple house-shaped favicon with water spray for Tom's Pressure Washing -->
+  <rect width="512" height="512" fill="#003366" rx="64" ry="64"/>
+  
+  <!-- House shape -->
+  <path d="M256 80 L80 220 L120 220 L120 420 L392 420 L392 220 L432 220 Z" fill="#ffffff"/>
+  
+  <!-- Water spray effect -->
+  <path d="M180 260 Q210 220 240 260 Q270 220 300 260 Q330 220 360 260" stroke="#00509e" stroke-width="16" fill="none"/>
+  <path d="M180 300 Q210 260 240 300 Q270 260 300 300 Q330 260 360 300" stroke="#00509e" stroke-width="14" fill="none"/>
+  <path d="M180 340 Q210 300 240 340 Q270 300 300 340 Q330 300 360 340" stroke="#00509e" stroke-width="12" fill="none"/>
+</svg>

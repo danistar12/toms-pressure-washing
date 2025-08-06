@@ -1,0 +1,19 @@
+{
+  "name": "Tom's Pressure Washing",
+  "short_name": "Tom's PW",
+  "icons": [
+    {
+      "src": "images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#003366",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
