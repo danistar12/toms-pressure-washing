@@ -390,7 +390,7 @@ p {
     margin-bottom: 40px;
 }
 .hero-logo {
-    max-width: 500px; /* Reduced from 800px to a more reasonable size */
+    max-width: 350px; /* Increased default size for the main company logo */
     margin-bottom: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
@@ -433,20 +433,20 @@ p {
         padding: 60px 10px 40px 10px;
     }
     .hero-logo {
-        max-width: 380px; /* Increased even more for better visibility on mobile */
+        max-width: 280px; /* Larger main Tom's Pressure Washing logo for mobile */
     }
     .logo img, .nav-logo {
-        max-height: 50px; /* Navigation logo size */
+        max-height: 45px; /* Smaller navigation icon */
     }
 }
 
 /* Medium-sized screens */
 @media (max-width: 900px) and (min-width: 701px) {
     .hero-logo {
-        max-width: 220px; /* Increased for better visibility */
+        max-width: 300px; /* Larger for better visibility on medium screens */
     }
     .logo img, .nav-logo {
-        max-height: 65px; /* Increased for better visibility */
+        max-height: 55px; /* Navigation icon size for medium screens */
     }
 }
 
