@@ -433,20 +433,20 @@ p {
         padding: 60px 10px 40px 10px;
     }
     .hero-logo {
-        max-width: 120px; /* Increased from 80px for better visibility */
+        max-width: 280px; /* Increased even more for better visibility on mobile */
     }
     .logo img, .nav-logo {
-        max-height: 50px; /* Slightly smaller for mobile navigation */
+        max-height: 70px; /* Navigation logo size */
     }
 }
 
 /* Medium-sized screens */
 @media (max-width: 900px) and (min-width: 701px) {
     .hero-logo {
-        max-width: 160px;
+        max-width: 220px; /* Increased for better visibility */
     }
     .logo img, .nav-logo {
-        max-height: 55px;
+        max-height: 65px; /* Increased for better visibility */
     }
 }
 
