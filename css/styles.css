@@ -390,7 +390,7 @@ p {
     margin-bottom: 40px;
 }
 .hero-logo {
-    max-width: 200px; /* Reduced from 800px to a more reasonable size */
+    max-width: 500px; /* Reduced from 800px to a more reasonable size */
     margin-bottom: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
@@ -433,10 +433,10 @@ p {
         padding: 60px 10px 40px 10px;
     }
     .hero-logo {
-        max-width: 280px; /* Increased even more for better visibility on mobile */
+        max-width: 380px; /* Increased even more for better visibility on mobile */
     }
     .logo img, .nav-logo {
-        max-height: 70px; /* Navigation logo size */
+        max-height: 50px; /* Navigation logo size */
     }
 }
 
