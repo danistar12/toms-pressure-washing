@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background: linear-gradient(135deg, #e0f7ff 0%, #f7f7f7 100%);
+    background: linear-gradient(135deg, #f8fbff 0%, #e6f3ff 25%, #ffffff 50%, #f0f8ff 75%, #e8f4fd 100%);
+    background-attachment: fixed;
 }
 h1, h2, h3, h4 {
     font-family: 'Montserrat', 'Inter', Arial, Helvetica, sans-serif;
@@ -48,6 +49,37 @@ h2::after {
 p {
     font-size: 1.1rem;
     color: #003366;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+    text-shadow: none;
+}
+/* white texxt */
+h2a {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 36px auto 18px auto;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+}
+h2a::after {
+    content: "";
+    display: block;
+    margin: 16px auto 0 auto;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #579fe7 60%, #e0f7ff 100%);
+    border-radius: 2px;
+}
+p1 {
+    font-size: 1.1rem;
+    color: #fff;
     line-height: 1.6;
     text-align: center;
     margin: 10px 0;
@@ -229,12 +261,86 @@ p {
 }
 /*services page*/
 .service{
-    background: linear-gradient(rgba(0,40,80,0.45),rgba(0,40,80,0.45)), url('images/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(0,40,80,0.85), rgba(0,80,158,0.75)), 
+                radial-gradient(circle at 20% 80%, rgba(0,191,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(112,185,209,0.15) 0%, transparent 50%);
     color: #fff;
-    padding: 100px 20px 80px 20px;
+    padding: 40px 20px 80px 20px;
     text-align: center;
     position: relative;
     margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(0,191,255,0.12) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(112,185,209,0.08) 1px, transparent 1px),
+        linear-gradient(45deg, transparent 48%, rgba(0,191,255,0.06) 49%, rgba(0,191,255,0.06) 51%, transparent 52%);
+    background-size: 60px 60px, 40px 40px, 80px 80px;
+    animation: float-tech 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.service::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    background: 
+        conic-gradient(from 0deg at 20% 30%, transparent 70deg, rgba(0,191,255,0.08) 72deg, rgba(0,191,255,0.08) 78deg, transparent 80deg),
+        conic-gradient(from 180deg at 80% 70%, transparent 70deg, rgba(112,185,209,0.06) 72deg, rgba(112,185,209,0.06) 78deg, transparent 80deg);
+    animation: rotate-tech 30s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.service > * {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes float-tech {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px) scale(1); 
+        opacity: 0.7;
+    }
+    25% { 
+        transform: translateY(-10px) translateX(5px) scale(1.02); 
+        opacity: 0.9;
+    }
+    50% { 
+        transform: translateY(-5px) translateX(-3px) scale(0.98); 
+        opacity: 0.8;
+    }
+    75% { 
+        transform: translateY(-15px) translateX(2px) scale(1.01); 
+        opacity: 0.85;
+    }
+}
+
+@keyframes rotate-tech {
+    0% { 
+        transform: rotate(0deg) scale(1); 
+        opacity: 0.4;
+    }
+    50% { 
+        transform: rotate(180deg) scale(1.05); 
+        opacity: 0.6;
+    }
+    100% { 
+        transform: rotate(360deg) scale(1); 
+        opacity: 0.4;
+    }
 }
 .services-list {
     max-width: 500px;
@@ -390,7 +496,7 @@ p {
     margin-bottom: 40px;
 }
 .hero-logo {
-    max-width: 350px; /* Increased default size for the main company logo */
+    max-width: 950px; /* Increased default size for the main company logo */
     margin-bottom: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
@@ -433,7 +539,7 @@ p {
         padding: 60px 10px 40px 10px;
     }
     .hero-logo {
-        max-width: 280px; /* Larger main Tom's Pressure Washing logo for mobile */
+        max-width: 380px; /* Larger main Tom's Pressure Washing logo for mobile */
     }
     .logo img, .nav-logo {
         max-height: 45px; /* Smaller navigation icon */
@@ -443,7 +549,7 @@ p {
 /* Medium-sized screens */
 @media (max-width: 900px) and (min-width: 701px) {
     .hero-logo {
-        max-width: 300px; /* Larger for better visibility on medium screens */
+        max-width: 500px; /* Larger for better visibility on medium screens */
     }
     .logo img, .nav-logo {
         max-height: 55px; /* Navigation icon size for medium screens */
